@@ -1,0 +1,4 @@
+docker-compose run app sh -c "python3 manage.py startapp core" //crea nuevo module del proyecto
+docker-compose run app sh -c "python3 manage.py runserver" //corre servicio
+docker-compose run app sh -c "python3 manage.py test && flake8" //corre los tests y el 'link' del codigo
+docker-compose run app sh -c "python3 manage.py createsuperuser" //crea un usuario administrador dentro del proyecto django
